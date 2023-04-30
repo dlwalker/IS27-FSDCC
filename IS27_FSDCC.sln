@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS27 FSDCC API", "IS27 FSDCC API\IS27 FSDCC API.csproj", "{E9087A2C-2005-404E-9AEC-64D99E1AA156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IS27_FSDCC_API", "IS27 FSDCC API\IS27_FSDCC_API.csproj", "{E9087A2C-2005-404E-9AEC-64D99E1AA156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
