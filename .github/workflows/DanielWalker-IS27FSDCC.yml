@@ -1,14 +1,14 @@
-name: Build and deploy .NET Core application to Web App Daniel-Walker-IS27FSDCC
+name: Build and deploy .NET Core application to Web App DanielWalker-IS27FSDCC
 on:
   push:
     branches:
     - master
 env:
-  AZURE_WEBAPP_NAME: Daniel-Walker-IS27FSDCC
-  AZURE_WEBAPP_PACKAGE_PATH: .\publish
+  AZURE_WEBAPP_NAME: DanielWalker-IS27FSDCC
+  AZURE_WEBAPP_PACKAGE_PATH: IS27_FSDCC_API\publish
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
-  WORKING_DIRECTORY: .
+  WORKING_DIRECTORY: IS27_FSDCC_API
 jobs:
   build:
     runs-on: windows-latest
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.Daniel_Walker_IS27FSDCC_62CD }}
+        publish-profile: ${{ secrets.DanielWalker_IS27FSDCC_A007 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
