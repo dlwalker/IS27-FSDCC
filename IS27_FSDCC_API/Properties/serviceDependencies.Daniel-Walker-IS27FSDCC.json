@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/DanielWalker-IS27FSDCCAPI/apis/Daniel-Walker-IS27FSDCC-API",
+      "type": "apis.azure"
+    }
+  }
+}
