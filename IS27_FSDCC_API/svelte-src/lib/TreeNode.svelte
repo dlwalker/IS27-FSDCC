@@ -5,7 +5,7 @@
 	let childNodes = node[childProp];
 </script>
 
-<div>
+<div class="node-outer">
 	<slot {node} />
 	{#if childNodes && childNodes.length}
 		<div class="children">
@@ -20,5 +20,8 @@
 
 
 <style>
-	div {border: 1px solid}
+	.node-outer {
+        border: 2px solid;
+        margin: 5px 5px 1px;
+    }
 </style>

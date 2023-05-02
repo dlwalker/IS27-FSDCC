@@ -7,6 +7,8 @@ namespace IS27_FSDCC_API.Models
         [Key]
         public int PositionNumber { get; set; }
         public string Title { get; set; }
+
+        public int EmployeeNumber { get; set; }
         public Employee? Employee { get; set; }
 
         public int? SupervisorPositionNumber { get; set; }
