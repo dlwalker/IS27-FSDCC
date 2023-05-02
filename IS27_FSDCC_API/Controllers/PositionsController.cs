@@ -21,7 +21,7 @@ namespace IS27_FSDCC_API.Controllers
             // context.Database.EnsureCreated();
         }
 
-        [Route("api/StaffDirectory")]
+        [Route("~/api/StaffDirectory")]
         [HttpGet]
         public async Task<ActionResult<Position>> GetStaffDirectory()
         {

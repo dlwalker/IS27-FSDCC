@@ -5,6 +5,7 @@ import terser from '@rollup/plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-only';
+import replace from '@rollup/plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -38,6 +39,12 @@ export default {
 		file: 'wwwroot/build/bundle.js'
 	},
 	plugins: [
+		replace({
+			values: {
+				'API_ROOT_URL': production ? "https://danielwalker-is27fsdcc.azurewebsites.net/api/" : "https://localhost:7007/api/",
+			},
+			preventAssignment: true,
+		}),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
