@@ -7,11 +7,28 @@
 
 
 <TreeNode node={root} childProp={childProperty} let:node>
-	<span>
-		Title: {node.title}<br>
-		Position Number: {node.positionNumber}
-	</span>
+    <div class="nodeContent">
+        <span>
+            Title: {node.title}<br>
+            Position Number: {node.positionNumber}
+        </span>
+        <span>
+            {#if node.employee}
+                Employee Number: {node.employee.employeeNumber}<br>
+                Name: {node.employee.firstName} {node.employee.lastName}
+            {:else}
+                Vacant
+            {/if}
+        </span>
+    </div>
 </TreeNode>
 
 <style>
+    .nodeContent {
+        display: flex;
+        padding: 1em;
+    }
+    .nodeContent > span {
+        width: 50%;
+    }
 </style>

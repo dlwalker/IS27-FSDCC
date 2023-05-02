@@ -23,7 +23,7 @@ namespace IS27_FSDCC_API.Controllers
 
         [Route("~/api/StaffDirectory")]
         [HttpGet]
-        public async Task<ActionResult<Position>> GetStaffDirectory()
+        public async Task<ActionResult<Position?>> GetStaffDirectory()
         {
             if (_context.Positions == null)
             {

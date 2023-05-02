@@ -28,7 +28,7 @@ namespace IS27_FSDCC_API.Controllers
           {
               return NotFound();
           }
-            return await _context.Employees.ToListAsync();
+            return await _context.Employees.OrderBy(e => e.EmployeeNumber).ToListAsync();
         }
 
         // GET: api/Employees/5
