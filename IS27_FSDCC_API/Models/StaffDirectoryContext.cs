@@ -27,7 +27,7 @@ namespace IS27_FSDCC_API.Models
                 .HasForeignKey(e => e.EmployeeNumber)
                 .IsRequired(false);
 
-
+            //seed data for in-memory database context
             modelBuilder.Entity<Employee>().HasData(
                 new Employee(1, "Daniel", "Walker"),
                 new Employee(2, "Aude", "Tunde"),

@@ -32,6 +32,8 @@ app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 using (var context = scope.ServiceProvider.GetService<StaffDirectoryContext>())
+{
     context.Database.EnsureCreated();
+}
 
-    app.Run();
+app.Run();
